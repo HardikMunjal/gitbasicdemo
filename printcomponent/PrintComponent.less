@@ -1,0 +1,457 @@
+#printing {
+    height: 842px !important;
+    width : 595px !important;
+    background-color: white !important;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+#printContent .monthName{
+  font-size: 19px;
+}
+#cardContainerCal{
+    background-color: white !important;    
+}
+
+.vuecal__header{
+    background:#7c5a9d;
+    display: none !important;
+    overflow: hidden;
+    width: 140% !important;
+    .vuecal__menu{
+        float:right;
+        width:117px;
+        margin-right: 19px;
+        margin-top: 16px;
+        .border-radius(38px);
+        border:1px solid @white-color;
+         height:20px;
+         overflow: hidden;
+         .vuecal__view-btn{
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding: 0;
+            line-height: 18px;
+            border: none;
+            display: block;
+            font-family:@BellxcelFont;
+            font-size: @small-text;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            color:@white-color;
+            letter-spacing: normal;
+            height:100%;
+            .border-radius(38px);
+            &.vuecal__view-btn--active{
+              background:@white-color;
+              color:#7c5a9d;
+            }
+         }
+    }
+    .vuecal__title-bar{
+      float: right;
+      background:none;
+      padding:17px 19px;
+      width: calc(100% - 136px);
+      position: relative;
+      .vuecal__title{
+        font-family:@BellxcelFont;
+        color:@white-color;
+        font-size:@midum-text;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        padding-left:30px;
+      }
+      .vuecal__arrow{
+        position: absolute;
+        margin:0;
+        left:19px;
+        top:50%;
+        .translateY(-50%);
+          i{
+            color:@white-color;
+          }
+          &.vuecal__arrow--next{
+              left:30px;
+          }
+      }
+      
+    }
+    .vuecal__weekdays-headings{
+      padding: 10.2px 0;
+      background: #f7f6fa;
+      clear: both;
+      width: 100%;
+        .xsmall{
+          display:block;
+          font-family: Montserrat,sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          color: #000000;
+        }
+        .full{
+          display:none;
+        }
+    }
+  
+  }
+  
+  
+  
+  .calendar-view-task{
+    .vuecal__header{
+      .vuecal__title-bar{
+        .vuecal__title{
+          span{
+                display:block;
+          }
+        }
+      }
+      
+      .vuecal__flex{
+        span{
+          display:none;
+          &.xsmall{
+            display:block;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .calendar-view-event{
+    .vuecal__header{
+      .vuecal__title-bar{
+        .vuecal__title{
+          span{
+                display:block;
+          }
+        }
+      }
+      .vuecal__flex{
+        span{
+          display:none;
+          &.xsmall{
+            display:block;
+          }
+        }
+      }
+    }
+  }
+  .calendar-view {
+    .vuecal__flex{
+      .vuecal__cell{
+        min-height:96px;
+        height: auto;
+        position: relative;
+        background:@white-color;
+        .vuecal__cell-date{
+          font-family: Montserrat,sans-serif;
+          font-size: 10px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.4;
+          letter-spacing: normal;
+          color: #000000;
+          position: absolute;
+          top:5px !important;
+          right:5px !important;
+        }
+      }
+    }
+  }
+  
+  .vuecal__cell-events{
+    cursor: pointer;
+    .vuecal__event{
+      background:none;
+    }
+    .vuecal__event-title{
+      .border-radius(2px);
+        padding:5px;
+        font-family: Montserrat,sans-serif;
+        color:#323232;
+        font-size: 8px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        background:#e5deeb;
+        width: calc(100% - 8px);
+        margin: 0 auto 10px;
+        cursor: pointer;
+    }
+  }
+  
+  
+  .calender-task {
+    &.calendar-view-week{
+      width:473px;
+      .vuecal--week-view{
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+      }
+      .vuecal__header{
+        margin-right:30px;
+      }
+      .customDivRowDates{
+        margin-right:30px;
+      }
+      .vuecal__flex {
+        &.vuecal__body{
+          height:578px;
+          padding-right:30px;
+          overflow-y: auto;
+        }
+      }
+      .vuecal__cell-events {
+        .health {
+          padding: 5px;
+          background: #e5deeb;
+          width: calc(100% - 8px);
+          margin: 0 auto 10px;
+          border-radius: 2px;
+          border-left:7px solid @purple;
+          .vuecal__event-title{
+            width: 100%;
+            margin: 0 0 4px;
+            padding: 0;
+          }
+          .vuecal__event-content
+          {
+            font-family:@BellxcelFont;
+            color: @primary-gray;
+            font-size: 8px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.13;
+            letter-spacing: normal;
+          }
+        }
+       
+      }
+    }
+  }
+  
+  .calendar-view-events {
+    &.calendar-view-week{
+      width:473px;
+      .vuecal--week-view{
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+      .vuecal__time-cell{
+        span{
+          font-family: @BellxcelFont;
+          color:@primary-gray;
+          font-size: 8px;
+          margin-right:6px;
+          font-weight: normal;
+        
+          font-stretch: normal;
+        
+          font-style: normal;
+        
+          line-height: 3;
+        
+          letter-spacing: normal;
+        }
+      }
+      .vuecal__header{
+        margin-left:0px;
+      }
+      .vuecal__weekdays-headings{
+        padding-left:30px;
+      }
+    .customDivRowDates{
+        margin-left:30px;
+        .grid-container{
+          border:none;
+        }
+      }
+      .vuecal__event {
+        &.health{
+          background: #e5deeb;
+          width: calc(100% - 8px) !important;
+          border-radius:2px;
+          left:50% !important;
+          .translateX(-50%);
+          padding: 5px;
+        }
+      }
+      .vuecal__event-title,.vuecal__event-content{
+          margin:0;
+          padding:0;
+          width:100%;
+          font-family:@BellxcelFont;
+          color:@primary-gray;
+          font-size: @small-text -2px;
+         
+          font-weight: 700;
+        
+          font-stretch: normal;
+        
+          font-style: normal;
+        
+          line-height: 1.2;
+        
+          letter-spacing: normal;
+      }
+      .vuecal__event-time{
+        margin:0;
+        font-family:@BellxcelFont;
+        color:@primary-gray;
+        font-size: @small-text -2px;
+      
+        font-weight: 500;
+      
+        font-stretch: normal;
+      
+        font-style: normal;
+      
+        line-height: 1.2;
+      
+        letter-spacing: normal;
+      }
+      .vuecal__event-content{
+        margin:0;
+      }
+    }
+  }
+  .calendar-view-tasks  {
+    &.calendar-view-month{
+      .vuecal__cell-events{
+        margin-top:30px;
+      }
+      .health  {
+        padding:5px;
+        width: calc(100% - 8px);
+        margin: 0 auto 10px;
+        background: #e5deeb;
+        border-radius:5px;
+        border-left:7px solid @purple;
+        &:nth-child(even){
+          border-right:7px solid @purple;
+          border-left:none;
+        }
+          .vuecal__event-title{
+            width: 100%;
+            margin: 0 0 4px;
+            padding:0;
+          }
+       }
+       .vuecal__cell {
+        &.vuecal__cell--today{
+          .vuecal__cell-content{
+            .vuecal__cell-date{
+              width:16px;
+              height:16px;
+              text-align: center;
+              line-height: 16px;
+              background:#7c5a9d;
+              .border-radius(50%);
+              color:@white-color;
+            }
+          }
+        }
+      }
+      
+     }
+  }
+  
+  .calender-events {
+    &.calendar-view-month{
+      .health {
+        background: #e5deeb;
+        width: calc(100% - 8px);
+        margin: 0 auto 10px;
+        padding:5px;
+        .border-radius(2px);
+        .vuecal__event-title{
+          margin:0 0 0px;
+        }
+      }
+      .vuecal__cell-content{
+         padding-top:40px;
+      }
+      .vuecal__cell {
+        &.vuecal__cell--today{
+          .vuecal__cell-content{
+            .vuecal__cell-date{
+              width:16px;
+              height:16px;
+              text-align: center;
+              line-height: 16px;
+              background:#7c5a9d;
+              .border-radius(50%);
+              color:@white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .uk-offcanvas-bar {
+    .offcanvas-flip-content {
+      .timeWrapper{
+        .form-group {
+          .time-picker{
+            position: relative;
+            width: 123px !important;
+            margin: 0;
+            .border-radius(8px);
+          }
+        }
+      }
+     
+    }
+  }
+  
+  .calender-wrapper{
+    .vdp-datepicker__calendar {
+    .cell {
+        width: 28px !important;
+        height:28px !important;
+        line-height: 28px !important;
+        margin: 5px 5px !important;
+        &.today{
+                     .border-radius(50%);
+                     background:#408fb0;
+                     color:@white-color;
+               }
+       }
+    }
+    
+    }
+  
+    .from-group-date{
+      .vdp-datepicker__calendar{
+        .cell {
+          &.day{
+            width: 28px !important;
+            height:28px !important;
+            line-height: 28px !important;
+            margin: 5px 5px !important;
+            &.today{
+              .border-radius(50%);
+              background:#408fb0;
+              color:@white-color;
+        }
+          }
+        }
+      }
+    }

@@ -1,0 +1,445 @@
+@import "./../../assets/styles/global_styles";
+@import "../../assets/styles/core_elements.less";
+a, button{
+    outline: none;
+}
+
+.scholar-content{
+    padding:8px 0 100px;
+    position: relative;
+    min-height: 940px;
+    .scholar-content-top{
+    padding-bottom:28px;
+    .scholar-content-top-left{
+        float: left;
+        width: 600px;
+        padding-left: 0px;
+        h2{
+            font-family: @BellxcelFont;
+            font-size:@heading-text;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: @green-color;
+            margin:0 0 32px;
+        }
+        h6{
+            font-family: @BellxcelFont;
+            font-size:@midum-text;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color:@primary-gray;
+            margin: 0 0 8px;
+        }
+        ul{
+            padding: 0;
+            margin-top: 14px;
+            li{
+                margin:0 0 47px;
+                .number{
+                  float:left;
+                  font-family: @BellxcelFont;
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: normal;
+                  letter-spacing: normal;
+                  color:@darkgreen;
+                  margin:0 0 0 1px;
+                }
+                .textDetails{
+                    float:right;
+                    width:calc(100% - 47px);
+                    h6{
+                        margin:0 0 8px;
+                    }
+                    p{
+                        font-family: @BellxcelFont;
+                        font-size:@midum-text;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        margin: 0 0 16px;
+                        color:@primary-gray;
+                        &.mb-20{
+                            margin-bottom: 20px !important;
+                        }
+                        strong{
+                          font-weight: 700;
+                          vertical-align: middle;
+                          display:inline-block;
+                        }
+                        .green-link{
+                            color:@darkgreen;
+                            text-transform: lowercase;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    a{
+                        font-family: @BellxcelFont;
+                        font-size:@midum-text;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        text-decoration: underline;
+                        color: @darkgreen;
+                        text-transform: capitalize;
+                        &.download-link{
+                            margin-top:16px;
+                            display: block;
+                        }
+                    }
+                }
+                &:first-child{
+                    .number{
+                        margin:0 0 0 5px;
+                      }
+                }
+                &:last-child{
+                    margin:0;
+                }
+            }
+        }
+        p{
+            font-family: @BellxcelFont;
+            font-size:@midum-text;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            margin: 0 0 2em 0px;
+            color:#323232;
+        }
+        .revisions-div{
+            margin-top: 28px;
+            margin-bottom: 14px;
+            p{
+                color:#323232;
+                line-height: 1.5;
+            }
+            .no-of-item{
+                color: @darkgreen;
+                margin-bottom: 0;
+                &.margin-top-11{
+                    margin-top:11px !important;
+                }
+                span{
+                    color:@primary-gray;
+                }
+            }
+        }
+    }
+    .scholar-content-top-right{
+        float: right;
+        width: 420px;
+        margin-top: 58px;
+        padding: 0 0px;
+        position: relative;
+        .step {
+            float: left;
+            width: 25%;
+            min-width: 138px;
+            text-align: center;
+            padding: 0 6px;
+            position: relative;
+            pointer-events: none;
+            &:after{
+                content: "";
+                background:@black;
+                height: 1px;
+                width: 102%;
+                position: absolute;
+                left: 50%;
+                top: 18px;
+            }
+            &:last-child{
+                &:after{
+                   display:none;
+                }
+            }
+           
+            em{
+                
+                width:36px;
+                height:36px;
+                .border-radius(50%);
+                border:3px solid @smallbtn-bg;
+                text-align: center;
+                font-family: @BellxcelFont;
+                font-size:@midum-text;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color:@smallbtn-bg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:0 auto 30px;
+                background:#fff;
+                position: relative;
+                z-index: 999;
+    
+              
+            }
+            span{
+                opacity: 0.5;
+                font-family: @BellxcelFont;
+                font-size:@midum-text;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color:@primary-gray;
+                display:block;
+            }
+            .active{
+                cursor: pointer;
+                pointer-events: auto;
+                em{
+                    color:@darkgreen;
+                    border-color:@darkgreen;
+                }
+                span{
+                    color:@darkgreen;
+                    font-weight:700;
+                    opacity: 1;
+                }
+            }
+            .complete{
+                cursor: pointer;
+                pointer-events: auto;
+                em{
+                    overflow: hidden;
+                    position: relative;
+                    border: none;
+                    &:after{
+                        content: "";
+                        height:100%;
+                        position: absolute;
+                        width:100%;
+                        left:0;
+                        top:0;
+                        background:@darkgreen url("../../assets/images/scholars/add-new-scholars/rightClick.svg") no-repeat center center;
+                    }
+                }
+            }
+            .complete-with-disable{
+                pointer-events: none;
+                em{
+                    overflow: hidden;
+                    position: relative;
+                    border: none;
+                    &:after{
+                        content: "";
+                        height:100%;
+                        position: absolute;
+                        width:100%;
+                        left:0;
+                        top:0;
+                        background: @darkgreen url("../../assets/images/scholars/add-new-scholars/rightClick.svg") no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.color-red{
+    color:@alert-red;
+}
+.scholar-section-bottom{
+    position: absolute;
+    bottom: 10px;
+    right:186px;
+    z-index: 9999;
+    &.scholar-section-bottom-3{
+        right:50px;
+        bottom:0;
+    }
+    figure{
+        text-align:right;
+    }
+}
+
+}
+.pb-22{
+    padding-bottom: 22px;
+}
+
+
+
+
+@media only screen and (max-width:1229px){
+    .scholar-content{
+        .scholar-content-top-right {
+            width: 50%;
+            padding:0 15px;
+        }
+        .scholar-content-top-left{
+            width: 50%;
+        }
+        .scholar-section-bottom{
+            right:50px;
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .scholar-content{
+        .scholar-section-bottom{
+            right:10px;
+        }
+    } 
+}
+@media only screen and (max-width:992px){
+    .scholar-section-bottom {
+        width: 300px;
+        padding: 0 50px 100px;
+    }
+    .scholar-content-top-right {
+        .step{
+            padding:0;
+            span{
+                font-size:@normal-text;
+            }
+        }
+    }
+    .scholar-content-top-left {
+        h2 {
+            font-size: @midum-text + 4px;
+            margin: 0 0 20px;
+        }
+        h6{
+            font-size:@normal-text;
+        }
+        ul {
+            li {
+                .textDetails {
+                    width: calc(100% - 26px);
+                    p,a{
+                        font-size:@normal-text;
+                    }
+                    a.download-link{
+                        margin-top:16px !important;
+                    }
+                }
+                .number
+                {
+                    margin:0;
+                }
+            }
+        }
+    }
+  
+}
+
+@media only screen and (max-width:768px){
+    .scholar-content{
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .scholar-content-top-left {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px;
+    }
+    .scholar-content-top-right {
+        width: 100%;
+        float: none;
+        margin: 0 0 60px;
+        position: static;
+    }
+    .scholar-section-bottom {
+        padding-top:30px;
+        figure {
+            display: block;
+            width: 100%;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:575px){
+
+    .scholar-content-top-right {
+        .step {
+            span {
+                font-size: @small-text;
+            }
+        }
+    }
+ 
+    .scholar-section-bottom {
+        padding: 0;
+        width: 170px;
+        right: auto;
+        left: 50%;
+       .translateX(-50%);
+        bottom: 67px;
+    }
+}
+
+.headingText{
+    font-family: @BellxcelFont;
+    font-size: @midum-text;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:@primary-gray;
+}
+
+.center-align {
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    font-family: @BellxcelFont;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #50ae41;
+}
+
+.showToastMessage{
+    position: absolute;
+    top: 20%;
+    padding: 0 20px;
+    background-color: #FFD280;
+    left:50%;
+    transform: translate(-50%, 0px);
+    font-family: @BellxcelFont;
+    font-size: 16px;
+    line-height: 45px;
+    color: @black;
+    font-weight: normal;
+}
+
+@media only screen and (max-width:767px){
+    .showToastMessage{
+        white-space: nowrap;
+        opacity: 0.5;
+        background-color: #faefd1;
+        top: 100px;
+        left: 0;
+        font-size: 14px;
+    }
+}    

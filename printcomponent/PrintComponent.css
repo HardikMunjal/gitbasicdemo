@@ -1,0 +1,279 @@
+body{
+    width: 1063px;
+    height: 1375px;
+    background-color: white;
+}
+
+#printing{
+    width:750px;
+}
+.vuecal__event {
+    position: relative !important;
+}
+
+#printContent .calendar-view-tasks.calendar-view-week .vuecal__header{
+    width:100% !important;
+    margin-right: 0 !important;
+}
+
+#printing #calender{
+    width:100% !important;
+}
+
+#printContent #calender .vuecal__header{
+    width: 100% !important;
+    margin-right: 0 !important;
+}
+
+#printContent #calender .customDivRowDatesPrint{
+    width: 100% !important;
+    margin-right: 0 !important;
+}
+#printContent #calender  .vuecal__flex .vuecal__body{
+     width: 100% !important;
+     margin-right: 0 !important;
+}
+.currentMonthName{
+    width: 100% !important;
+}
+
+
+#vue-calendar{
+    margin: 50px 0 0 96px;
+    width: 871px;
+    height: 866.8px;
+}
+.bellxcel-logo-1{
+    margin-left: 675px;
+    margin-top: 30px;
+    width: 80px;
+}
+
+.vuecal__arrow.vuecal__arrow--next,.vuecal__arrow.vuecal__arrow--prev{
+    display: none !important;
+}
+.vuecal__flex.vuecal__menu{
+    display: none !important;
+}
+table {
+border-collapse: collapse;
+}
+
+table, td, th {
+border: 1px solid grey;
+}
+td{
+width: 125.56px;
+vertical-align: baseline;
+}
+
+.hide-top-text{
+    display: none;
+}
+.print-heading{
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000000;
+    padding-bottom: 4px;
+}
+.print-heading-program{
+    padding: 3px 0;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+}
+.print-sub-heading{
+    font-size: 15px;
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000000;
+}
+.top-text{
+    width: 400px;
+    height: 19px;
+    font-family: Montserrat,sans-serif;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.monthName{
+    font-size: 11px;
+    margin-top: 15px;
+    color: white;
+    background: #7C5A9D;
+    padding: 8px 10px;
+    font-weight: 500;
+    width: 443px;
+    height: 30px;
+    font-family: Montserrat,sans-serif;
+    display: block;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}  
+
+
+.school-name{
+    width: 300px;
+    height: 0px;
+    display: block;
+    font-family: Montserrat,sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+}
+.calendar-header{
+    width: 871px;
+    height: 49px;
+    object-fit: contain;
+    margin: 44px 0 0 96px;
+    display: block;
+}
+.first-day{
+    object-fit: contain;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    margin: 9px 1.5px 16px 99px;
+}
+.day{
+    object-fit: contain;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+}
+.sunday{
+    width: 121px;
+    height: 25px;
+}
+.monday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.tuesday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.wednesday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.thursday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.friday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.saturday{
+    width: 121px;
+    height: 25px;
+    margin: 9px 0 16px 0;
+}
+.calendar-grid-month {
+    width: 879px;
+    height: 866.8px;
+    object-fit: contain;
+    position: absolute;
+    margin-left: 96px;
+    float: left;
+    clear: both;
+}
+.calendar-grid-month-mid {
+    width: 873px;
+    height: 177px;
+    object-fit: contain;
+    position: relative;
+    margin-left: 98.5px;
+    margin-top: 342px;
+    float: left;
+    clear: both;
+}
+.bellxcel-logo{
+    width: 187px;
+    height: 57px;
+    float: left;
+    clear: both;
+}
+.date{
+    width: 19px;
+    height: 30px;
+    object-fit: contain;
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: black;
+    margin-left: 85%;
+}
+.data-rect{
+    border-radius: 2px;
+      background-color: #e5deeb;
+      margin: 0 2px 0 2px;
+      padding: 5px;
+}
+.event-title{
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+      font-size: 11px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--primary-gray);
+}
+.event-time{
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--primary-gray);
+}
+
+.vuecal__header .vuecal__title-bar
+{
+  display: none !important;
+}

@@ -3,7 +3,8 @@
     <div class="welcome-content-top">
     
         <h1 class="uk-modal-title header-title">{{getScreenText("LBL_HOMEPAGE")}}</h1>
-    </div>
+    </divhhh>
+    
     <div class="height-center">
     <div class="link_table" v-if="getLmsInfo.status === 200">
           <table class="uk-table uk-table-small uk-table-divider" aria-describedby="lms links">
